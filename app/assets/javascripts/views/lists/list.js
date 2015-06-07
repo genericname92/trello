@@ -7,21 +7,20 @@ TrelloClone.Views.ListShow = Backbone.View.extend({
   },
 
   events: {
-    "mouseup .ui-sortable-handle": "saveOrder"
+    "sortupdate": "saveOrder"
   },
   saveOrder: function(event){
     var counter = 0;
     var listContext = this;
-    //grab each child of the el, use data id to find the appropriate object
+    //grab each child of the el (this.value), use data id to find the appropriate object
     //update the object with a new counter since now it's in order
-    $(this.$el).children().forEach(
-      var attr = { ord: counter };
-      card.save(attr, {
-        wait: true,
-        error: console.log("error")
-      });
+    $(this.$el).children().each(function(){
+      var card_id = $(this).attr("data-id");
+      var card = listContext.model.cards().get(card_id);
+      card.set({ord: counter});
+      card.save();
       counter++;
-    );
+    });
   },
   render: function(){
     var content = this.template({list: this.model});
