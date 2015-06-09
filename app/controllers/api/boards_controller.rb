@@ -4,7 +4,7 @@ module Api
       @board = current_user.boards.new(board_params)
 
       if @board.save
-        render json: @board
+        redirect_to ""
       else
         render json: @board.errors.full_messages, status: :unprocessable_entity
       end

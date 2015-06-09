@@ -17,6 +17,7 @@
 //= require backbone
 //= require bootstrap
 //= require jquery.serializejson
+//= require composite_view
 //= require trello_clone
 //= require_tree ../templates
 //= require_tree ./utils

@@ -1,0 +1,16 @@
+.singleBoard h1 {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.completeList:nth-child(n+1) {
+  float: left;
+  width: auto;
+  margin: auto;
+}
+
+.ListForm {
+  float: left;
+  margin-left: 50px;
+}

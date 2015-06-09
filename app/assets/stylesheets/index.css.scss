@@ -1,0 +1,100 @@
+.backdrop {
+  margin-top: 70px;
+}
+.newBoard {
+  display: none;
+  position: absolute;
+}
+
+.open .newBoard{
+  color: black;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.boardItem {
+  font-size: 24px;
+  display: block;
+  padding: 0px;
+  border: 0;
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: purple;
+  float: left;
+  margin: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+}
+.boardContainer h1 {
+  width: auto;
+  height: auto;
+}
+
+.boardItem a {
+  align-self: center;
+  margin: auto;
+  vertical-align: middle;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 140px;
+  padding-top: 0px;
+  text-deocration: none;
+}
+.boardItem:hover {
+  background: green;
+}
+.backdrop {
+  margin-top: 70px;
+}
+.newBoard {
+  display: none;
+  position: absolute;
+}
+
+.open .newBoard{
+  color: black;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.boardItem {
+  font-size: 24px;
+  display: block;
+  padding: 0px;
+  border: 0;
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+  border: 2px solid black;
+  color: purple;
+  float: left;
+  margin: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+}
+.boardContainer h1 {
+  width: auto;
+  height: auto;
+}
+
+.boardItem a {
+  align-self: center;
+  margin: auto;
+  vertical-align: middle;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 140px;
+  padding-top: 0px;
+  text-deocration: none;
+}
+.boardItem:hover {
+  background: green;
+}
